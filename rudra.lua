@@ -1,5 +1,5 @@
--- Anil V1 | FINAL UNIVERSAL
--- Script By Anil | UNITED
+-- Ayu V1 | FINAL UNIVERSAL
+-- Script By Ayu | UNITED
 
 ---------------- SERVICES ----------------
 local Players = game:GetService("Players")
@@ -15,7 +15,7 @@ local DEFAULT_DELAY = 1.5
 local WARNING_DELAY = 20
 
 ---------------- OWNER ----------------
-local OWNER = "akj200995"
+local OWNER = "god_ofgame99920"
 
 ---------------- STATE ----------------
 local running = false
@@ -66,7 +66,7 @@ local TMKX_WORDS = {
 	"TMKX MAI FATHER","TMKX MAI MOTHER","TMKX MAI SISTER",
 	"TMKX MAI BROTHER","TMKX MAI DADI","TMKX MAI DADA",
 	"TMKX MAI PAR DADA","TMKX MAI CYCLE","TMKX MAI MOTOR",
-	"TMKX MAI TURBO","TMKX MAI Anil","TMKX MAI SAB PGL",
+	"TMKX MAI TURBO","TMKX MAI Ayu","TMKX MAI SAB PGL",
 	"TMKX MAI AMERICA","TMKX MAI INDIA","TMKX MAI RUSSIA",
 	"TMKX MAI ASIA","TMKX MAI EUROPE","TMKX MAI AFRIA",
 	"TMKX MAI AUSTRALIA","TMKX MAI THERMOMETER",
@@ -164,7 +164,7 @@ local TMKX_WORDS = {
 "TMKX MAI TRAINER",
 "TMKX MAI MEMBERSHIP",
 "TMKX MAI OWNER",
-"TMKX MAI AnilKALAND",
+"TMKX MAI AyuKALAND",
 "TMKX MAI APRIL",
 "TMKX MAI JUNE",
 "TMKX MAI MAY",
@@ -318,7 +318,7 @@ end
 
 ---------------- GUI ----------------
 local gui = Instance.new("ScreenGui", lp.PlayerGui)
-gui.Name = "Anil_V1"
+gui.Name = "Ayu_V1"
 
 local frame = Instance.new("Frame", gui)
 frame.Size = UDim2.new(0,330,0,250)
@@ -329,7 +329,7 @@ frame.Draggable=true
 
 local title = Instance.new("TextLabel",frame)
 title.Size=UDim2.new(1,0,0,30)
-title.Text="Anil BOT SCRIPT"
+title.Text="Ayu BOT SCRIPT"
 title.TextColor3=Color3.new(1,1,1)
 title.BackgroundColor3=Color3.fromRGB(30,30,30)
 
@@ -363,7 +363,7 @@ local function startSpam()
 	running=true
 	index=1
 
-	local warn="Spam starting in 20 seconds | SCRIPT BY Anil"
+	local warn="Spam starting in 20 seconds | SCRIPT BY Ayu"
 	send(makePattern("_",WARNING_LINE_LEN-#warn)..warn)
 
 	task.wait(WARNING_DELAY)
@@ -404,13 +404,13 @@ local function onChat(sender,msg)
 			stopSpam()
 			startBtn.Active=false
 			stopBtn.Active=false
-			send(makePattern("_",WARNING_LINE_LEN-27).."SCRIPT LOCKED BY Anil S1R")
+			send(makePattern("_",WARNING_LINE_LEN-27).."SCRIPT LOCKED BY Ayu S1R")
 
 		elseif args[1]=="!release" then
 			locked=false
 			startBtn.Active=true
 			stopBtn.Active=true
-			send(makePattern("_",WARNING_LINE_LEN-29).."SCRIPT UNLOCKED BY Anil S1R")
+			send(makePattern("_",WARNING_LINE_LEN-29).."SCRIPT UNLOCKED BY Ayu S1R")
 		end
 	end
 end
@@ -426,4 +426,4 @@ else
 	end)
 end
 
-warn("Anil V1 | FINAL UNIVERSAL | LOADED")
+warn("Ayu V1 | FINAL UNIVERSAL | LOADED")
